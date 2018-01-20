@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Формы</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="SenderOfRequests.js"></script>
+</head>
+<body>
+<p><b>Данные:</b>
+    <details>
+        <div>
+            <script type="text/javascript" src="SenderOfRequests.js">
+                function getDataButton() {
+                    var senderOfRequests = new SenderOfRequests();alert(2);
+                    form.preventDefault();alert(3);
+                    senderOfRequests.getGames();alert(4);
+                    $('.wrapper').html(senderOfRequests.data);alert(5);
+                }
+            </script>
+            <form>
+                <p><b>Данные:</b><br>
+                <p id="data" ></p><br>
+                    <p onclick="getDataButton()" >Все данные</p>
+            </form>
+        </div>
+    </details><br>
+<p><b>Форма добавления:</b>
+    <details>
+        <div>
+            <form>
+                <p><b>Genres:</b></p><br>
+                <input id="genres" type="text" size="40">
+                <p><b>date:</b></p><br>
+                <input id="date" type="text" size="40">
+                <p><b>developer:</b></p><br>
+                <input id="developer" type="text" size="40">
+                <p><b>publisher:</b></p><br>
+                <input id="publisher" type="text" size="40">
+                <p><b>platform:</b></p><br>
+                <input id="platform" type="text" size="40">
+                <p><b>assessment:</b></p><br>
+                <input id="assessment" type="text" size="40">
+                <p><b>price:</b></p><br>
+                <input id="price" type="text" size="40">
+                <p><b>license:</b></p><br>
+                <input id="license" type="text" size="40">
+                <br><br>
+                <p><b>systemRequirements:</b></p><br>
+                <p><b>cpu:</b></p><br>
+                <input id="cpu" type="text" size="40">
+                <p><b>ram:</b></p><br>
+                    <input id="ram" type="text" size="40">
+                <p><b>videoCard:</b></p><br>
+                    <input id="videoCard" type="text" size="40">
+                <p><b>diskSpace:</b></p><br>
+                    <input id="diskSpace" type="text" size="40">
+                <p><b>type:</b></p><br>
+                    <input id="type" type="text" size="40">
+                <br>
+                <button>Отправить</button>
+            <script>
+
+            </script>
+        </div>
+    </details><br>
+<p><b>Удаление</b></p>
+    <details>
+        <form>
+            <p><b>id:</b></p><br>
+            <input id="Delete" type="text" size="40"><br>
+            <button>Отправить</button>
+        </form>
+    </details><br>
+<p><b>Поиск по id:</b></p>
+    <details>
+        <div>
+            <form>
+                <p><b>id:</b></p><br>
+                <input id="SearchByid" type="text" size="40"><br>
+                <button>Отправить</button>
+            </form>
+        </div>
+    </details><br>
+<p><b>Поиск</b></p>
+    <details>
+        Здесь будет форма
+    </details><br>
+</body>
+</html>
